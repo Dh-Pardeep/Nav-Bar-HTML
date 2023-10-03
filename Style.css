@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+}
+
+
+/* nav bar one */
+@media (max-width:992px) {
+  .md_navbar {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: -100%;
+    top: 0;
+    backdrop-filter: blur(100px);
+    transition: all 500ms linear;
+    z-index: 3;
+  }
+
+  label[for=" icon"] {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+  }
+
+  label[for="menuicon"]>span {
+    width: 100%;
+    height: 4px;
+    background-color: #313EF7;
+
+  }
+
+  .show {
+    left: 0;
+  }
+
+}
+
+.close_icon {
+  transition: all 1000ms linear;
+}
+
+.close_icon .nav_line_one {
+  transform: translate(0, 10.5px) rotate(-45deg);
+  transition: all 400ms linear;
+}
+
+.close_icon .nav_line_two {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 300ms linear;
+}
+
+.close_icon .nav_line_three {
+  transform: translate(0, -10.5px) rotate(45deg);
+  transition: all 400ms linear;
+}
+
+
+
+
+
+
+
+/* nav bar two */
+
+.menu {
+  font-size: 38px;
+  font-family: sans-serif;
+  width: 36px;
+  height: 39px !important;
+  gap: 10px !important;
+  padding-top: -30px;
+  overflow: hidden;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar1 {
+  background-color: red;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  transition: all linear 300ms;
+}
+
+.closbtn {
+  top: 20px;
+  right: 20px;
+}
